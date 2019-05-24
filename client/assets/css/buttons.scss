@@ -1,0 +1,74 @@
+$blue: #7dadb7;
+$white: #fff;
+
+.btn {
+  background-color: transparent;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+
+  // FIRST HEADER BUTTON
+  &-header {
+    color: $blue;
+    position: relative;
+    border: 2px solid $blue;
+    padding: 1.5rem 2rem;
+    transition: background-color .25s,color .25s;
+    font-weight: 600;
+    font-size: 1rem;
+    &:hover {
+      background-color: $blue;
+      color: $white;
+      &::after {
+          right: -78px;
+          width: 98px;
+      }
+      .button__text {
+          transform: translate(0,2px)
+      }
+    }
+    &-mobile .btn-text {
+        display: inline-block;
+        transform: translate(2px,2px)
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        top: 34px;
+        right: -168px;
+        width: 188px;
+        height: 1px;
+        transition: right .25s,width .25s;
+        background-color: #117a8b;
+        animation: stick-in-left 1.85s cubic-bezier(.7,0,.04,1) .75s;
+        transform-origin: left;
+    }
+  }
+
+  // SECOND BUTTON
+  &-subscribe {
+    font-weight: 600;
+    color: $blue;
+    border: 2px solid $blue;
+    transition: background-color .25s,color .25s;
+    &-white {
+      background: $white;
+      font-weight: 500;
+    }
+    &-active {
+      color: $white;
+      background-color: darken($blue, 15);
+    }
+    &:hover {
+      color: $white;
+      background-color: $blue;
+    }
+    &:hover .btn-text {
+        transform:translate(0,2px);
+    }
+  }
+}
+
+.bottom-0 {
+  position: absolute;
+  bottom: 0;
+}

@@ -1,0 +1,99 @@
+/* assets/css/transitions.css */
+
+.page-enter-active,
+.page-leave-active {
+  transition: opacity .3s ease;
+  visibility: visible;
+  animation-delay: 0.4s;
+  animation-name: fadeInRight;
+}
+.page-enter,
+.page-leave-to {
+  opacity: 0;
+}
+
+.chat-animate {
+  transition: width .3s ease;
+  visibility: visible;
+  animation-delay: 0.4s;
+  animation-name: fadeInRight;
+}
+
+.hovereffect {
+  width: 100%;
+  height: 100%;
+  max-height: 300px;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+  .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    background-color: rgba(0,0,0,0.78);
+    transition: all 1.4s;
+  }
+
+  img {
+    display: block;
+    position: relative;
+    transition: all 4.8s;
+  }
+
+  h2 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 1rem;
+    background: rgba(0,0,0,0.6);
+    transform: translatey(-100px);
+    transition: all 3.6s;
+    padding: 10px;
+  }
+  a.info {
+    &:hover {
+      box-shadow: 0 0 5px #fff;
+    }
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    color: #fff;
+    border: 1px solid #fff;
+    background-color: transparent;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    transition: all 4.8s ease;
+    margin: 50px 0 0;
+    padding: 7px 14px;
+  }
+  &:hover {
+    img {
+      -ms-transform: scale(1.2);
+      -webkit-transform: scale(1.2);
+      transform: scale(1.2);
+    }
+    .overlay {
+      opacity: 1;
+      filter: alpha(opacity=100);
+    }
+    h2, a.info {
+      opacity: 1;
+      filter: alpha(opacity=100);
+      -ms-transform: translatey(0);
+      -webkit-transform: translatey(0);
+      transform: translatey(0);
+    }
+    a.info {
+      -webkit-transition-delay: .2s;
+      transition-delay: .2s;
+    }
+  }
+}

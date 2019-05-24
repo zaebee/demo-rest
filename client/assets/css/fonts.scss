@@ -1,0 +1,36 @@
+$blue: #7dadb7;
+$font-family-base: Rubik, sans-serif;
+
+$theme-colors: (
+  "primary": $blue,
+  "danger": #ff4136
+);
+$input-bg: #f1f3f8;
+$input-placeholder-color: rgba(0,0,0,0.3);
+$custom-control-indicator-checked-bg: #f98a6c;
+$custom-control-indicator-checked-box-shadow: #f98a6c;
+$custom-control-indicator-focus-box-shadow: #f98a6c;
+$custom-control-indicator-box-shadow: #f98a6c;
+
+$navbar-light-color: $blue;
+$navbar-light-hover-color: darken($blue, 15);
+$navbar-light-brand-color: $blue;
+$navbar-light-brand-hover-color: darken($blue, 15);
+
+// $form-feedback-valid-color: $blue;
+
+$card-columns-count: 2;
+
+html {
+  font-family: Rubik, sans-serif;
+}
+body {
+  font-family: Rubik, sans-serif;
+  font-weight: 400;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  font-display: swap;
+}
+
+@import "~bootstrap/scss/bootstrap";

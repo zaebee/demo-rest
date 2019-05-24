@@ -1,0 +1,65 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
+@include media-breakpoint-down(sm) {
+  h2, h3 {
+    font-size: 1.5rem !important;
+    font-weight: 600;
+  }
+  h1  {
+    font-size: 1.75rem;
+    font-weight: 600;
+  }
+  .text-box {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    color: #fff;
+  }
+  .btn-header {
+    &::after {
+      display: none;
+    }
+  }
+  .card-hidden {
+    overflow: hidden;
+    max-height: 460px;
+  }
+  .navbar {
+    background: #fff;
+  }
+  .offer, .brief {
+    margin-right: 0 !important;
+    margin-bottom: 1rem;
+    text-decoration: none;
+  }
+  main.chat-animate {
+    width: 100%;
+    .app-head {
+      width: 100%;
+    }
+  }
+}
+@include media-breakpoint-up(md) {
+  .card-hidden {
+    overflow: hidden;
+    max-height: 360px;
+  }
+  .text-box {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    color: #fff;
+    h1 {
+      font-size: 4rem;
+    }
+    p {
+      font-size: 2rem;
+      font-weight: lighter;
+    }
+  }
+
+}
