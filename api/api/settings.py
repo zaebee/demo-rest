@@ -71,6 +71,7 @@ MIDDLEWARE = [
 CORS_ORIGIN_WHITELIST = (
     'http://localhost:3000',
     'http://api.heavenweb.me',
+    'http://api.heavenweb.me:9090',
     'http://heavenweb.me',
     'https://heavenweb.me',
 )
