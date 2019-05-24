@@ -8,8 +8,8 @@ This is the repository for a tutorial that teaches how to set up a server side r
 * [Npm](https://www.npmjs.com/) (or [Yarn](https://yarnpkg.com/en/))
 
 ## Running the application
-1. Clone the project to your machine ```[git clone https://github.com/zaebee/heavenweb.git]```
-2. Navigate into the diretory ```[cd heavenweb]```
+1. Clone the project to your machine ```[git clone https://github.com/zaebee/demo-rest.git]```
+2. Navigate into the diretory ```[cd demo-rest]```
 3. Source the virtual environment ```[pipenv shell]```
 4. Install the dependencies ```[pipenv install]```
 5. Navigate into the backend directory ```[cd api]```
