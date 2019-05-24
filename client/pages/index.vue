@@ -3,14 +3,10 @@
     <b-container fluid>
     </b-container>
 
-    <b-container>
-      <footer-nav/>
-    </b-container>
   </div>
 </template>
 
 <script>
-  import FooterNav from '~/components/FooterNav.vue'
 
   export default {
     head() {
@@ -24,7 +20,6 @@
       }
     },
     components: {
-      FooterNav,
     },
     methods: {
     }

@@ -80,7 +80,7 @@ module.exports = {
     redirect: {
       login: '/login',
       callback: '/callback',
-      home: '/profile'
+      home: '/posts'
     },
     strategies: {
       local: {
@@ -102,10 +102,6 @@ module.exports = {
   markdownit: {
     injected: true
   },
-  serverMiddleware: [
-    // Will register redirect-ssl npm package
-    'redirect-ssl',
-  ],
   /*
   ** Build configuration
   */
